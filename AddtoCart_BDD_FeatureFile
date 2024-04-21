@@ -1,0 +1,6 @@
+Given Launch Automation Exercise Application 
+When Select desired product for Product Listing Page
+Then Verify Product is Added to the Cart
+Then Verify Product details in Shopping Cart Page
+When Remove Product in Shopping Cart Page
+Then Verify Empty Cart Page Details
