@@ -39,6 +39,21 @@ String driverName = getDriver().toString();
   @FindBy(xpath = "//span[@id="empty_cart"]//following::b[contains(text(),'Cart is empty!')]")
   public WebElement verifyEmptyCart;
 
+
+
+  //Launch Application
+    public void launchApplication() throws Exception
+    {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\sys\\Downloads\\chromedriver_win32.exe");
+       
+      // Instantiate a ChromeDriver class.
+        WebDriver driver = new ChromeDriver();
+        // Maximize the browser
+        driver.manage().window().maximize();
+        // Launch Application
+        driver.get("https://automationexercise.com/");
+    }
+  
   //Select Category
   public void selectCategory() throws Exception {
 if (selectWomenCategory.isDisplayed()){
