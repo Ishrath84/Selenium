@@ -14,7 +14,7 @@ addtoCartPage.launchApplication();
 @When("Select desired product for Product Listing Page")
 public void selectProductinPLP() throws Exception {
 addtoCartPage.selectCategory();
-addtoCartPage.selectProductinPlPage();
+addtoCartPage.selectSubCategory();
 addtoCartPage.selectProductinPlPage();
 }
 
